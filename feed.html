@@ -5,37 +5,112 @@
 	<title>Document</title>
 	<meta charset = "utf-8">
 	<meta description = "TT">
+	<link href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-	<header>
+	<div class = "header_container">
+		<!-- Logo or Image-->
+		<div class="logo_container">
+			<a href="feed.html">
+				<img src="images/img1.png">
+			</a>
+		</div>
 		
-		<div class = "header_container">
-			<!-- Logo or Image-->
-			<div class="logo_container">
-				
+		<!-- Search-->
+		<div class = "search_container">
+			<div class = "search_log">
+				<i class = "fa fa-search"></i>
 			</div>
 			
-			<!-- Search-->
-			<div class = "search_container">
-				<div class = "search_logo">
-					
-				</div>
-				<div class = "query">
-					
-				</div>
+			<div class = "search_box">
+				<input type="text" placeholder="검색">
 			</div>
-
-			<!-- Explorer-->
-			<div class = "explorer_container">
-				<div class = "explore"></div>
-				<div class = "recommendation"></div>
-				<div class = "profile"></div>
-			</div>
+			
 		</div>
 
-	</header>
+		<!-- Explorer-->
+		<div class = "explorer_container">
+
+			<!-- Explore -->
+			<a href="explore.html">
+				<i class = "fa fa-compass"></i>
+			</a>
+
+			<!-- Like -->
+			<a href="likes.html">
+				<i class = "fa fa-heart-o"></i>
+			</a>
+
+			<!-- Profile -->
+			<a href="profile.html">
+				<i class = "fa fa-user-o"></i>
+			</a>
+
+			<!-- <div class = "explore"></div>
+			<div class = "recommendation"></div>
+			<div class = "profile"></div> -->
+
+		</div>
+	</div>
+
+	<!-- photo display -->
+	<main class = "feed_container">
+		
+		<div class = "author_container">
+			<img src="images/barcelona.jpg">
+		</div>
+		<div class = "author_name">
+			FC_Barcelona
+		</div>
+
+		<div>
+			<img src="images/img2.jpg">
+		</div>
+
+		<!-- contents container -->
+		<div class = "contents_container">
+
+			<div class = "action_container">
+				<i class = "fa fa-heart-o"></i>
+				<i class = "fa fa-comment-o"></i>
+			</div>
+			
+			<span class = "likes_count">
+				<span class = "likes_number">
+					119 
+				</span>
+				likes
+			</span>
+
+			<ul class = "comment-container">
+				<li class = "comment-content">
+					<span class = "comment_author">
+					Barcelona: </span> Good Luck
+				</li>
+
+				<li class = "comment-content">
+					<span class = "comment_author">
+					Sejong: </span> OK
+				</li>
+			</ul>
+
+			<!-- uploaded time -->
+			<span class = "content_time">
+				13 hours ago
+			</span>
+
+			<div class = "addcomment_container">
+				<input type="text" placeholder="Add comments here">
+				<i class = "fa fa-ellipsis-h"></i>
+			</div>
+
+		</div>
+		
+
+	</main>
+	
 
 	<main></main>
 
